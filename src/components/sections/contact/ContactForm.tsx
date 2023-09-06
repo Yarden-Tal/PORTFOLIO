@@ -12,6 +12,7 @@ import EmailInput from "./EmailInput";
 import NameInput from "./NameInput";
 import SubmitButton from "./SubmitButton";
 import { formDetails, toEmail, toName } from "../../../data/data";
+import SocialMedia from "./SocialMedia";
 
 //@ts-ignore
 const { VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY } = import.meta.env;
@@ -82,7 +83,18 @@ const ContactForm = (): JSX.Element => {
       >
         <p className="sect-subtxt">Get in touch</p>
         <h3 className="sect-head-txt">Contact.</h3>
-
+        <div className="text-center mt-2">
+          <span className="text-white font-normal text-center mr-1">
+            Phone:{" "}
+          </span>
+          <a
+            href="tel:0524797204"
+            className="text-secondary font-medium my-4 text-center"
+          >
+            052-4797204
+          </a>
+        </div>
+        <SocialMedia />
         <form
           ref={formRef}
           onSubmit={handleSubmit}

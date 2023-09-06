@@ -391,4 +391,10 @@ const formDetails: FormDetails = {
   message: "",
 };
 
-export { services, technologies, experiences, testimonials, projects, projectsTxt, toName, toEmail, formDetails };
+const socialMediaLinks: Record<string, string> = {
+  linkedIn: 'https://www.linkedin.com/in/yarden-tal-245095112/',
+  github: 'https://github.com/Yarden-Tal',
+  instagram: 'https://www.instagram.com/ty_9891'
+}
+
+export { services, technologies, experiences, testimonials, projects, projectsTxt, toName, toEmail, formDetails, socialMediaLinks };

@@ -46,4 +46,8 @@
   .submit-btn {
     @apply h-16 w-[12rem] py-1 px-10 rounded-xl outline-none text-primary font-bold shadow-md shadow-primary;
   }
+
+  .social-media-link {
+    @apply cursor-pointer opacity-70 hover:opacity-100 hover:fill-secondary;
+  }
 }

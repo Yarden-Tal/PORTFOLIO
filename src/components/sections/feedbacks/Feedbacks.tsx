@@ -17,7 +17,7 @@ const Feedbacks = (): JSX.Element => {
           <h2 className="sect-head-txt">Testimonials.</h2>
         </motion.div>
       </div>
-      <div className={`-mt-20 pb-14 pad-x flex flex-wrap gap-7`}>
+      <div className={`-mt-20 pb-14 pad-x flex flex-wrap gap-7 justify-center lg:justify-start`}>
         {testimonials.map((t: Testimonial, i: number) => (
           <FeedbackCard key={i} index={i} {...t} />
         ))}
