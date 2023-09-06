@@ -44,7 +44,7 @@
   }
 
   .submit-btn {
-    @apply h-16 w-[12rem] py-1 px-10 rounded-xl outline-none text-primary font-bold shadow-md shadow-primary;
+    @apply h-16 w-[12rem] mx-auto py-1 px-10 rounded-xl outline-none text-primary font-bold shadow-md shadow-primary;
   }
 
   .social-media-link {

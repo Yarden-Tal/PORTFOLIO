@@ -18,7 +18,7 @@ const MenuLeftPart = ({ setActive }): JSX.Element => {
           toggleTheme();
         }}
       >
-        <img className="pulsate-fwd w-full" src={!isDarkMode ? moon : sun} />
+        <img className="w-2/3" src={!isDarkMode ? moon : sun} />
         <Tooltip
           className="change-color"
           id="theme"
