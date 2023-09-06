@@ -1,0 +1,10 @@
+@import url("./_common.css");
+@import url("./_base_tailwind.css");
+@import url("./_animations.css");
+@import url("./_gradients.css");
+@import url("./_tooltips.css");
+@import url("./_loaders.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
