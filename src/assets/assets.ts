@@ -27,6 +27,11 @@ import flutter from "./tech/flutter.svg";
 import vue from "./tech/vue.svg";
 import swift from "./tech/swift.svg";
 
+// Recommendations
+import dror from "./dror.png";
+import isaac from "./isaac.png";
+import yonatan from "./yonatan.png";
+
 // Experience
 import itc from "./experience/itc.jpeg";
 import quatro from "./experience/quatro.jpeg";
@@ -76,4 +81,7 @@ export {
   countries,
   calculateIt,
   sleep_Buddy,
+  dror,
+  yonatan,
+  isaac
 };

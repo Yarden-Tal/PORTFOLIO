@@ -25,7 +25,10 @@ import {
   countries,
   url,
   calculateIt,
-  sleep_Buddy
+  sleep_Buddy,
+  yonatan,
+  dror,
+  isaac
 } from "../assets/assets";
 import { Experience, FormDetails, NavLink, Project, Service, Technology, Testimonial } from "../ts/interfaces";
 
@@ -197,26 +200,26 @@ const testimonials: Testimonial[] = [
   {
     testimonial:
       "Lorem ipsum fsda Lorem ipsum asd Lorem df ipsum fsda Lorem fds ipsum Lorem ipsum f Lorem ipsum fsd Lorem ipsum Lorem ipsum Lorem ipsum.",
-    name: "Plony almony",
+    name: "Dror Gahan",
     role: "Project Manager",
     company: "Quatro",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    image: dror,
   },
   {
     testimonial:
-      "Lorem ipsum fsda Lorem ipsum asd Lorem df ipsum fsda Lorem fds ipsum Lorem ipsum f Lorem ipsum fsd Lorem ipsum Lorem ipsum Lorem ipsum.",
-    name: "Plony almony",
+      "Yarden is a dedicated student with strong front-end skills. His commitment to creating visually appealing websites, his friendliness & curiosity, make an excellent fit for any development team.",
+    name: "Yonatan Salmon",
     role: "Lecturer",
-    company: "Israel Tech Challenge",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    company: "ITC",
+    image: yonatan,
   },
   {
     testimonial:
-      "Lorem ipsum fsda Lorem ipsum asd Lorem df ipsum fsda Lorem fds ipsum Lorem ipsum f Lorem ipsum fsd Lorem ipsum Lorem ipsum Lorem ipsum.",
-    name: "Plony almony",
+      "I had the pleasure of collaborating with Yarden as a backend developer. Yarden's frontend skills are exceptional, and working together was a seamless and productive experience.",
+    name: "Isaac Groisman",
     role: "Backend Dev",
     company: "Quatro",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    image: isaac,
   },
 ];
 
