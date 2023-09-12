@@ -9,7 +9,7 @@ import {
 } from "@react-three/drei";
 import CanvasLoader from "../loaders/Loader";
 
-const Ball = (props: { imgUrl: string; }): JSX.Element => {
+const Ball = (props: { imgUrl: string }): JSX.Element => {
   const [decal] = useTexture<string[]>([props.imgUrl]);
 
   return (
@@ -19,7 +19,7 @@ const Ball = (props: { imgUrl: string; }): JSX.Element => {
       <mesh castShadow receiveShadow scale={2.75}>
         <icosahedronGeometry args={[1, 15]} />
         <meshStandardMaterial
-          color='#fff8eb'
+          color="#fff8eb"
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading
@@ -47,7 +47,11 @@ const Ball = (props: { imgUrl: string; }): JSX.Element => {
 
 const BallCanvas = ({ icon }: { icon: string }): JSX.Element => {
   return (
-    <Canvas className="cursor-grab" frameloop='demand' dpr={[1, 2]} gl={{ preserveDrawingBuffer: true }}>
+    <Canvas
+      className="cursor-grab"
+      dpr={[1, 2]}
+      gl={{ preserveDrawingBuffer: true }}
+    >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
         <Ball imgUrl={icon} />

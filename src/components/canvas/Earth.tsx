@@ -14,9 +14,8 @@ const Earth = (): JSX.Element => {
 const EarthCanvas = (): JSX.Element => {
   return (
     <Canvas
-    className="cursor-grab"
+      className="cursor-grab"
       shadows
-      frameloop='demand'
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
       camera={{
