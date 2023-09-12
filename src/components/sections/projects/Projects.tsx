@@ -9,7 +9,7 @@ import { Project } from "../../../ts/interfaces";
 const Projects = (): JSX.Element => {
   return (
     <section>
-      <motion.div variants={textVariant()}>
+      <motion.div>
         <p className="sect-subtxt">My work</p>
         <h2 className="sect-head-txt">Projects.</h2>
       </motion.div>
