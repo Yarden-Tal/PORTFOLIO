@@ -15,7 +15,7 @@ const ProjectCard = ({
   sourceCodeLink,
 }): JSX.Element => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.33, 0.75)}>
       <Tilt
         //@ts-ignore
         options={{
