@@ -125,16 +125,6 @@ const technologies: Technology[] = [
     icon: nodejs,
     docsUrl: "https://nodejs.org/en/about",
   },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-    docsUrl: "https://www.mongodb.com/",
-  },
-  {
-    name: "Git (Github & Bitbucket)",
-    icon: git,
-    docsUrl: "https://git-scm.com/",
-  },
 ];
 
 const experiences: Experience[] = [
