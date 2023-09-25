@@ -7,7 +7,7 @@ import { Technology } from "../../../ts/interfaces";
 
 const Techs = (): JSX.Element => {
   return (
-    <section className="flex flex-row flex-wrap justify-center gap-10 pad max-w-7xl mx-auto relative z-0">
+    <section className="flex flex-row flex-wrap justify-center gap-10">
       {technologies.map((t: Technology) => (
         <div
           data-tooltip-id={t.icon}
@@ -32,4 +32,4 @@ const Techs = (): JSX.Element => {
   );
 };
 
-export default Techs;
+export default SectionWrapper(Techs, "");

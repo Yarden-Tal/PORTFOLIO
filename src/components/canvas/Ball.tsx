@@ -54,7 +54,7 @@ const BallCanvas = ({ icon }: { icon: string }): JSX.Element => {
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
-        <Ball imgUrl={icon} />
+        <Ball imgUrl={icon} key={icon} />
       </Suspense>
 
       <Preload all />
