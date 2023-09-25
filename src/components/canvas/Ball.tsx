@@ -48,7 +48,7 @@ const Ball = (props: { imgUrl: string }): JSX.Element => {
 const BallCanvas = ({ icon }: { icon: string }): JSX.Element => {
   return (
     <Canvas
-      className="cursor-grab"
+      className="cursor-grab absolute"
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
     >
