@@ -28,9 +28,17 @@ import {
   sleep_Buddy,
   yonatan,
   dror,
-  isaac
+  isaac,
 } from "../assets/assets";
-import { Experience, FormDetails, NavLink, Project, Service, Technology, Testimonial } from "../ts/interfaces";
+import {
+  Experience,
+  FormDetails,
+  NavLink,
+  Project,
+  Service,
+  Technology,
+  Testimonial,
+} from "../ts/interfaces";
 
 export const navLinks: NavLink[] = [
   {
@@ -63,79 +71,69 @@ const services: Service[] = [
   {
     title: "Polyglot",
     icon: backend,
-  }
+  },
 ];
 
 const technologies: Technology[] = [
   {
     name: "HTML",
     icon: html,
-    docsUrl: "https://developer.mozilla.org/en-US/docs/Web/HTML"
+    docsUrl: "https://developer.mozilla.org/en-US/docs/Web/HTML",
   },
   {
     name: "CSS",
     icon: css,
-    docsUrl: "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    docsUrl: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
   {
     name: "JavaScript",
     icon: javascript,
-    docsUrl: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    docsUrl: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
     name: "TypeScript",
     icon: typescript,
-    docsUrl: "https://www.typescriptlang.org/"
+    docsUrl: "https://www.typescriptlang.org/",
   },
   {
     name: "React",
     icon: reactjs,
-    docsUrl: "https://react.dev/"
+    docsUrl: "https://react.dev/",
   },
   {
     name: "Flutter",
     icon: flutter,
-    docsUrl: "https://flutter.dev"
+    docsUrl: "https://flutter.dev",
   },
   {
     name: "Vue JS (& Nuxt)",
     icon: vue,
-    docsUrl: "https://vuejs.org/"
+    docsUrl: "https://vuejs.org/",
   },
   {
     name: "Python",
     icon: python,
-    docsUrl: "https://www.python.org/"
+    docsUrl: "https://www.python.org/",
   },
   {
     name: "Tailwind",
     icon: tailwind,
-    docsUrl: "https://tailwindcss.com/"
+    docsUrl: "https://tailwindcss.com/",
   },
   {
     name: "Node JS",
     icon: nodejs,
-    docsUrl: "https://nodejs.org/en/about"
+    docsUrl: "https://nodejs.org/en/about",
   },
   {
     name: "MongoDB",
     icon: mongodb,
-    docsUrl: "https://www.mongodb.com/"
+    docsUrl: "https://www.mongodb.com/",
   },
   {
     name: "Git (Github & Bitbucket)",
     icon: git,
-    docsUrl: "https://git-scm.com/"
-  },
-  {
-    name: "Figma",
-    icon: figma,
-    docsUrl: "https://en.wikipedia.org/wiki/Figma_(software)"
-  },
-  {
-    name: "Swift",
-    icon: swift,
-    docsUrl: "https://developer.apple.com/swift/"
+    docsUrl: "https://git-scm.com/",
   },
 ];
 
@@ -152,9 +150,9 @@ const experiences: Experience[] = [
       "Implementing responsive & adaptive design, ensuring cross-platform & cross-browser compatibility.",
       "Testing & Deployment across mobile app stores and hosting services.",
       "Maintenance of live, client-facing apps using version-control, Content Management Systems.",
-      "Techs: Flutter, Dart, Mobile-App Responsive-Design & deployment, Tailwind, Vue.js, Nuxt w Typescript, Wordpress & PHP, Figma"
+      "Techs: Flutter, Dart, Mobile-App Responsive-Design & deployment, Tailwind, Vue.js, Nuxt w Typescript, Wordpress & PHP, Figma",
     ],
-    websiteUrl: "https://www.linkedin.com/company/quatro-digital/mycompany/"
+    websiteUrl: "https://www.linkedin.com/company/quatro-digital/mycompany/",
   },
   {
     title: "Fullstack Dev Bootcamp",
@@ -166,9 +164,9 @@ const experiences: Experience[] = [
       "Fullstack training course covering everything necessary to get you up & running for industry standards ☑️",
       "Frontend syllabus: HTML, CSS, BEM, Responsive Design, Sass, Modern Javascript, OOP, Typescipt, React, Material UI",
       "Backend syllabus: Node.js w Typescript, Express.js, SQL, MongoDB, Firebase",
-      "Other topics: Testing, Git w Github, Deployment on Heroku & Netlify, Bash"
+      "Other topics: Testing, Git w Github, Deployment on Heroku & Netlify, Bash",
     ],
-    websiteUrl: "https://www.linkedin.com/school/israel-tech-challenge/"
+    websiteUrl: "https://www.linkedin.com/school/israel-tech-challenge/",
   },
   {
     title: "Fullstack Engineer Course",
@@ -177,9 +175,9 @@ const experiences: Experience[] = [
     iconBg: "#383E56",
     date: "2021 - 2022",
     points: [
-      "A thorough Fullstack Course which covers all major topics in Web Development."
+      "A thorough Fullstack Course which covers all major topics in Web Development.",
     ],
-    websiteUrl: "https://www.linkedin.com/company/codecademy/"
+    websiteUrl: "https://www.linkedin.com/company/codecademy/",
   },
   {
     title: "Python Programming",
@@ -190,9 +188,9 @@ const experiences: Experience[] = [
     points: [
       "Introduction to Computer Programming.",
       "Python 3 basics, syntax, pip packages, modules, handling files.",
-      "Simple Python projects."
+      "Simple Python projects.",
     ],
-    websiteUrl: "https://www.linkedin.com/school/free-code-camp/"
+    websiteUrl: "https://www.linkedin.com/school/free-code-camp/",
   },
 ];
 
@@ -344,7 +342,7 @@ const projects: Project[] = [
       {
         name: "windows",
         color: "blue-text-gradient",
-      }
+      },
     ],
     image: py_lang_detector,
     sourceCodeLink: "https://github.com/Yarden-Tal/Python-Lang-Detector",
@@ -371,7 +369,8 @@ const projects: Project[] = [
         color: "blue-text-gradient",
       },
     ],
-    image: "https://media.istockphoto.com/id/1155869460/photo/under-construction-tape-barrier-on-white-background.jpg?s=170667a&w=0&k=20&c=oCwU5pYaocuA6sGFUw37OlIZUOxmSyFzR8GBas8q9MU=",
+    image:
+      "https://media.istockphoto.com/id/1155869460/photo/under-construction-tape-barrier-on-white-background.jpg?s=170667a&w=0&k=20&c=oCwU5pYaocuA6sGFUw37OlIZUOxmSyFzR8GBas8q9MU=",
     sourceCodeLink: "https://github.com/Yarden-Tal/Pet-Hero",
   },
 ];
@@ -380,7 +379,7 @@ const projectsTxt: string = `Following projects showcases my skills and experien
   real-world examples of my work. Each project is briefly described with
   links to code repositories and live demos in it. It reflects my
   ability to solve complex problems, work with different technologies,
-  and manage projects effectively.`
+  and manage projects effectively.`;
 
 const toName: string = "Yarden Tal";
 const toEmail: string = "yardental1989@gmail.com";
@@ -392,9 +391,20 @@ const formDetails: FormDetails = {
 };
 
 const socialMediaLinks: Record<string, string> = {
-  linkedIn: 'https://www.linkedin.com/in/yarden-tal-245095112/',
-  github: 'https://github.com/Yarden-Tal',
-  instagram: 'https://www.instagram.com/ty_9891'
-}
+  linkedIn: "https://www.linkedin.com/in/yarden-tal-245095112/",
+  github: "https://github.com/Yarden-Tal",
+  instagram: "https://www.instagram.com/ty_9891",
+};
 
-export { services, technologies, experiences, testimonials, projects, projectsTxt, toName, toEmail, formDetails, socialMediaLinks };
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  projectsTxt,
+  toName,
+  toEmail,
+  formDetails,
+  socialMediaLinks,
+};
