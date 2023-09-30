@@ -4,6 +4,7 @@ import { BallCanvas } from "../../canvas/canvas";
 import { SectionWrapper } from "../../../hoc";
 import { technologies } from "../../../data/data";
 import { Technology } from "../../../ts/interfaces";
+import { isFlutter, isMobile } from "../../../utils/responsive";
 
 const Techs = (): JSX.Element => {
   return (
@@ -25,7 +26,13 @@ const Techs = (): JSX.Element => {
               {t.name}
             </a>
           </Tooltip>
-          <BallCanvas icon={t.icon} />
+          {isMobile ? (
+            <div>
+              <img className={isFlutter(t.name)} src={t.icon} alt={t.name} />
+            </div>
+          ) : (
+            <BallCanvas icon={t.icon} />
+          )}
         </div>
       ))}
     </section>

@@ -125,6 +125,26 @@ const technologies: Technology[] = [
     icon: nodejs,
     docsUrl: "https://nodejs.org/en/about",
   },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+    docsUrl: "https://www.mongodb.com/",
+  },
+  {
+    name: "Git (Github & Bitbucket)",
+    icon: git,
+    docsUrl: "https://git-scm.com/",
+  },
+  {
+    name: "Figma",
+    icon: figma,
+    docsUrl: "https://en.wikipedia.org/wiki/Figma_(software)",
+  },
+  {
+    name: "Swift",
+    icon: swift,
+    docsUrl: "https://developer.apple.com/swift/",
+  },
 ];
 
 const experiences: Experience[] = [

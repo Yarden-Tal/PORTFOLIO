@@ -8,6 +8,7 @@ import {
   useTexture,
 } from "@react-three/drei";
 import CanvasLoader from "../loaders/Loader";
+import { isBallTooLarge } from "../../utils/responsive";
 
 const Ball = (props: { imgUrl: string }): JSX.Element => {
   const [decal] = useTexture<string[]>([props.imgUrl]);
@@ -27,7 +28,7 @@ const Ball = (props: { imgUrl: string }): JSX.Element => {
         <Decal
           position={[0, 0, 1]}
           rotation={[2 * Math.PI, 0, 6.25]}
-          scale={0.95}
+          scale={isBallTooLarge(props.imgUrl) ? 0.8 : 0.9}
           map={decal}
           //@ts-ignore
           flatShading
