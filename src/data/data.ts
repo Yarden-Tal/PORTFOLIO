@@ -207,7 +207,7 @@ const experiences: Experience[] = [
 const testimonials: Testimonial[] = [
   {
     testimonial:
-      "Lorem ipsum fsda Lorem ipsum asd Lorem df ipsum fsda Lorem fds ipsum Lorem ipsum f Lorem ipsum fsd Lorem ipsum Lorem ipsum Lorem ipsum.",
+      "Yarden, your skills as a frontend developer are remarkable. Your dedication to crafting user-friendly interfaces and delivering quality projects greatly enhance our company.",
     name: "Dror Gahan",
     role: "Project Manager",
     company: "Quatro",
