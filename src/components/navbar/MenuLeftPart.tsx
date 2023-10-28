@@ -35,7 +35,7 @@ const MenuLeftPart = ({ setActive }): JSX.Element => {
       >
         <p
           className={`text-[18px] font-bold cursor-pointer flex ${
-            isDarkMode ? "text-white" : "text-primary"
+            isDarkMode ? "text-white" : "text-tertiary"
           }`}
         >
           Yarden Tal &nbsp;

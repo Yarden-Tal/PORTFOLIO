@@ -10,10 +10,12 @@ const DesktopLinks = ({ active, isDarkMode, setActive }): JSX.Element => {
           key={link.id}
           className={`${
             active === link.title
-              ? "text-white"
+              ? isDarkMode
+                ? "text-white"
+                : "text-slate-400"
               : isDarkMode
               ? "text-secondary"
-              : "text-primary"
+              : "text-tertiary"
           } 
         hover:text-white text-[18px] font-medium cursor-pointer`}
           onClick={() => setActive(link.title)}
