@@ -1,6 +1,6 @@
 import React from "react";
 import { navLinks } from "../../data/data";
-import { NavLink } from "../../ts/types";
+import { NavLink } from "../../ts/interfaces";
 
 const MobileMenu = ({ toggle, setToggle, active, setActive }): JSX.Element => {
   const handleClick = (nav: NavLink): void => {
