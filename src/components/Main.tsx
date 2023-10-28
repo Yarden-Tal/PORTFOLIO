@@ -1,9 +1,21 @@
 import React from "react";
-import { About, Experience, Techs, Projects, Feedbacks, Contact } from "./components";
+import {
+  About,
+  Experience,
+  Techs,
+  Projects,
+  Feedbacks,
+  Contact,
+} from "./components";
+import { useTheme } from "../context/ColorThemeContext";
 
 const Main = (): JSX.Element => {
   return (
-    <main>
+    <main
+      className={`${
+        useTheme().isDarkMode ? "bg-secondaryDark" : "bg-neutral-300"
+      }`}
+    >
       <About />
       <Experience />
       <Techs />
