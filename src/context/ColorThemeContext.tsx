@@ -2,8 +2,8 @@ import React, { createContext, useContext, useState } from "react";
 import { ThemeContextType } from "../ts/interfaces";
 
 const initialThemeContext: ThemeContextType = {
-  isDarkMode: false,
-  toggleTheme: () => { },
+  isDarkMode: true,
+  toggleTheme: () => {},
 };
 
 const DARK_MODE_KEY: string = "darkMode";
@@ -11,22 +11,15 @@ const DARK_MODE_KEY: string = "darkMode";
 export const ThemeContext = createContext(initialThemeContext);
 
 export const ThemeProvider: React.FC<{ children: JSX.Element }> = ({ children }) => {
-  
-const storedDarkMode: string | null = localStorage.getItem(DARK_MODE_KEY);
-const isDarkOnStorage: boolean = (storedDarkMode === "true");
+  // const storedDarkMode: string | null = localStorage.getItem(DARK_MODE_KEY);
+  // const isDarkOnStorage: boolean = (storedDarkMode === "true");
 
-  /**
-   * Dark mode source-of-truth
-   */
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(isDarkOnStorage);
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
 
-  /**
-   * Toggles between dark & light mode & saves choice in local-storage
-   */
   const toggleTheme = (): void => {
     const newDarkMode: boolean = !isDarkMode;
     setIsDarkMode(newDarkMode);
-    localStorage.setItem(DARK_MODE_KEY, String(newDarkMode));
+    // localStorage.setItem(DARK_MODE_KEY, String(newDarkMode));
   };
 
   const themeContextValue: ThemeContextType = {
@@ -36,7 +29,9 @@ const isDarkOnStorage: boolean = (storedDarkMode === "true");
 
   return (
     <ThemeContext.Provider value={themeContextValue}>
-      {children}
+      <div className={isDarkMode ? "dark-theme" : "light-theme"}>
+        {children}
+      </div>
     </ThemeContext.Provider>
   );
 };

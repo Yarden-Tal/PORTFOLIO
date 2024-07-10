@@ -24,7 +24,7 @@ const Hero = (): JSX.Element => {
         </div>
       </div>
 
-      {/* <ComputersCanvas /> */}
+      <ComputersCanvas />
 
       <AboutCtaButton />
     </section>

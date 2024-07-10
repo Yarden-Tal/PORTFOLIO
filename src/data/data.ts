@@ -153,7 +153,7 @@ const experiences: Experience[] = [
     company_name: "Quatro Digital",
     icon: quatro,
     iconBg: "#383E56",
-    date: "April 2022 - Now",
+    date: "April 2022 - April 2024",
     points: [
       "Responsible for Pixel-Perfect Front-End oriented development for Web & Cross-Platform apps.",
       "Collaborating with cross-functional teams including designers, SEO team members, product managers, QA and other developers to create high-quality web & mobile apps.",
